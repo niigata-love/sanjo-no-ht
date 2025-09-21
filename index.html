@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>本当に大丈夫？三条市の未来を揺るがすアフリカ・ホームタウン計画</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background-color: #f9fafb; /* Lighter Gray background */
+            color: #1f2937; /* Darker Gray text */
+        }
+        .main-title {
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+            font-weight: 900;
+        }
+        .section-container {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            padding: 2rem;
+            margin-bottom: 3rem;
+        }
+        .topic-card {
+            background-color: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-top: 4px solid #b91c1c; /* red-800 */
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+        }
+        .special-topic-card {
+            background-color: #fffbeb; /* amber-50 */
+            border-top-color: #d97706; /* amber-600 */
+        }
+        .data-card {
+            background: #111827; /* Gray 900 */
+            border: none;
+            color: #f9fafb;
+        }
+        .action-box {
+            background-color: #fffbeb; /* amber-50 */
+            border: 2px solid #f59e0b; /* amber-500 */
+        }
+        .literacy-box {
+             background: #1f2937; /* Gray 800 */
+             color: #f9fafb;
+             border: 3px solid #facc15;
+        }
+        .link-button {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            margin-top: 0.5rem;
+            border-radius: 0.375rem;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.2s ease;
+            background-color: #fef2f2; /* red-50 */
+            color: #b91c1c; /* red-800 */
+            border: 1px solid #fca5a5; /* red-300 */
+        }
+        .link-button:hover {
+            background-color: #fee2e2; /* red-100 */
+            transform: translateY(-2px);
+        }
+        .pdf-download-link {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.6rem 1.2rem;
+            margin-top: 0.5rem; /* added margin-top */
+            background-color: #15803d; /* green-700 */
+            color: white;
+            font-weight: 600;
+            border-radius: 0.375rem;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        .pdf-download-link:hover {
+            background-color: #166534; /* green-800 */
+            transform: translateY(-2px);
+        }
+        .timeline-item {
+            position: relative;
+            padding-left: 2.5rem;
+            padding-bottom: 2.5rem;
+        }
+        .timeline-item:last-child {
+            padding-bottom: 0;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0.6rem;
+            top: 0.6rem;
+            bottom: -0.6rem;
+            width: 3px;
+            background-color: #f3f4f6; /* gray-100 */
+        }
+         .timeline-item:last-child::before {
+            display: none;
+         }
+        .timeline-dot {
+            position: absolute;
+            left: 0;
+            top: 0.5rem;
+            width: 1.25rem;
+            height: 1.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 9999px;
+            background-color: #b91c1c; /* red-800 */
+            color: white;
+            font-weight: bold;
+        }
+        .reference-link {
+            display: inline-block;
+            margin-top: 0.5rem;
+            font-weight: bold;
+            color: #1d4ed8;
+            text-decoration: underline;
+        }
+        .reference-link:hover {
+            color: #1e40af;
+        }
+        .pdf-excerpt {
+            background-color: #f3f4f6;
+            border-left: 4px solid #6b7280;
+            padding: 0.75rem 1rem;
+            margin-top: 0.5rem;
+            font-style: italic;
+            color: #4b5563;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- ヘッダー -->
+    <header class="bg-white text-gray-800 shadow-md sticky top-0 z-10">
+        <div class="container mx-auto px-6 py-4">
+            <h1 class="text-2xl md:text-3xl font-bold text-red-700">本当に大丈夫？<br class="sm:hidden"> 三条市の未来を揺るがすアフリカ・ホームタウン計画</h1>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="container mx-auto px-4 md:px-6 py-8">
+
+        <!-- ヒーローセクション -->
+        <section class="text-center bg-red-800 border-4 border-yellow-400 text-white rounded-lg p-8 md:p-12 mb-12 shadow-2xl">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4 main-title">私たちの「<span class="text-yellow-300">生活</span>」と「<span class="text-yellow-300">家族</span>」に、<br>今まさに<span class="text-yellow-300">危険</span>が迫っています。</h2>
+            <p class="text-lg md:text-xl max-w-4xl mx-auto mt-6">
+                市が「国際交流」として進める「アフリカ・ホームタウン計画」。しかし、その実態は私たちの生活、そして大切な子供たちの未来を脅かす可能性を秘めています。
+            </p>
+        </section>
+        
+        <!-- 追加動画セクション -->
+        <section class="max-w-4xl mx-auto mb-12">
+            <div class="aspect-video">
+                <iframe class="w-full h-full rounded-lg shadow-md" src="https://www.youtube.com/embed/S6etbtoji1E?start=32" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- 計画の経緯と問題の核心 -->
+        <section class="section-container max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-10 text-red-800">なぜ、この計画は問題なのか？</h2>
+            
+            <div>
+                <h3 class="text-2xl font-bold text-gray-800 mb-8 text-center">市民が納得できない、３つの理由</h3>
+                <div class="relative">
+                    <div class="timeline-item">
+                        <div class="timeline-dot">1</div>
+                        <h4 class="font-bold text-2xl mb-2 text-red-700">不透明なプロセス</h4>
+                        <p class="text-lg">「アフリカ人材の受入」という市の将来に重大な影響を及ぼす計画が、市民への十分な説明や議論がないまま、水面下で進められていました。市民が気づいたときには、すでに認定を受けており、計画が動き出していたのです。</p>
+                        <p class="mt-4 font-bold text-lg">→石破茂首相は、アフリカの経済成長に向け「今後3年間で30万人の人材育成を実施する」と表明。<a href="https://news.yahoo.co.jp/articles/adc5b61eeb0ba9125bf6dbc253c40087c10b96e9" target="_blank" class="reference-link ml-1">参考：「アフリカ経済成長へ30万人育成…」</a></p>
+                        <p class="mt-4 font-bold text-lg">→三条市は、JICAから「ガーナのホームタウン」に認定</p>
+                        <div class="mt-2 flex justify-center">
+                            <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【三条市が認定されました！】<br>横浜での「JICAアフリカ・ホームタウンサミット」で、市長が登壇🌍🪷<br>このたび三条市は、JICAから「ガーナのホームタウン」に認定されました。<br><br>パネルディスカッションでは、ガーナと三条市の交流ビジョンを共有し、地域と国際協力の可能性を語りました✨✨<a href="https://twitter.com/hashtag/%E4%B8%89%E6%9D%A1%E5%B8%82?src=hash&amp;ref_src=twsrc%5Etfw">#三条市</a>… <a href="https://t.co/W1Ycv4zLLd">pic.twitter.com/W1Ycv4zLLd</a></p>&mdash; 三条市役所 (@sanjo_city) <a href="https://twitter.com/sanjo_city/status/1958408730946506934?ref_src=twsrc%5Etfw">August 21, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                        <p class="mt-4 font-bold text-lg">→ナイジェリアでホームタウン計画が報道される</p>
+                        <div class="mt-2 flex justify-center">
+                           <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">日本🇯🇵では『デマだ』『誤解だ』<br>やらと言いよるが…<br><br>ナイジェリア🇳🇬では思いっきり<br>報道されちょるやないか🤷⁉️ あ⁉️<br><br> 『 特別免除ビザの恩恵 』<br><br> 😳💥恩恵💥😳<br><br> 木更津市長の渡辺はんよ…<br><br> どないなっちょるんや🤷⁉️<br><br>木更津市民の前でハッキリとした… <a href="https://t.co/hpfg1smVrX">pic.twitter.com/hpfg1smVrX</a></p>&mdash; 🎌不動心🎌 ✨Neo✨ (@tenkataihei369) <a href="https://twitter.com/tenkataihei369/status/1961625694464872813?ref_src=twsrc%5Etfw">August 30, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot">2</div>
+                        <h4 class="font-bold text-2xl mb-2 text-red-700">言葉のすり替え</h4>
+                        <p class="text-lg">行政は「国際交流であり、移民政策ではない」と説明しますが、JICAの資料には明確に「人材受入・育成」と書かれています。この食い違いが、市民の行政に対する不信感を増大させています。</p>
+                        <div class="mt-2 flex justify-center">
+                            <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">三条市の国際交流に関する報道に関しまして<br><br>一部のSNSで報じられている移住・移民を受け入れ等の事実はございません。<br><br>三条市長のコメントを公表いたしましたので、詳しくはこちらをご覧ください。<a href="https://t.co/j1YF9RXR0s">https://t.co/j1YF9RXR0s</a></p>&mdash; 三条市役所 (@sanjo_city) <a href="https://twitter.com/sanjo_city/status/1959902143978348682?ref_src=twsrc%5Etfw">August 25, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                        <div class="mt-2 flex justify-center">
+                             <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">外務省、JICAアフリカホームタウン事業は、移民政策に繋げる取り組みだと、多くの証拠が見つかっているのに、いまだにSNSの誤情報だと言い張る。アフリカホームタウンは白紙撤回一択です。<a href="https://t.co/VKhghkl0An">https://t.co/VKhghkl0An</a><br>via タロヤマ <a href="https://twitter.com/ningen_goukakuu?ref_src=twsrc%5Etfw">@ningen_goukakuu</a></p>&mdash; NewsSharing (@newssharing1) <a href="https://twitter.com/newssharing1/status/1968176062934003832?ref_src=twsrc%5Etfw">September 17, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                        <div class="mt-4">
+                            <h5 class="font-bold text-gray-700">↓証拠資料</h5>
+                            <div class="mt-2 space-y-4">
+                                <div>
+                                    <p class="pdf-excerpt">連携事項「(6) 三条市の地域資源を活用した地域活性化を図るとともに、三条市への定住・定着の促進に関する こと。」</p>
+                                    <a href="2024.07.地域おこしと国際協力の研究開発と推進に関する連携協定.pdf" download class="pdf-download-link">地域おこしと国際協力の連携協定.pdf</a>
+                                </div>
+                                <div>
+                                    <p class="pdf-excerpt">「近い将来 ガーナ人財の受入れに向けて」「外国人材の受け入れ拡大: ガーナ人材が三条市の企業でインターンシップなど実務を経験する...」</p>
+                                    <a href="2024.12.JICAガーナ海外協力隊派遣者OB・OG募集 (新潟県三条市) _ 地域とつながるプラットフォーム スマウト (SMOUT).pdf" download class="pdf-download-link">JICAガーナ海外協力隊OB・OG募集.pdf</a>
+                                </div>
+                                <div>
+                                    <p class="pdf-excerpt">目的「...外国人材受入れ体制及び持続的運営にかかるボトルネックとなる課題を調査する。」活動内容「パイロット派遣事業の実施支援 (ガーナから三条市への対象人材受入)」</p>
+                                    <a href="2025.01.15.コンサルタント等契約.pdf" download class="pdf-download-link">コンサルタント等契約(2025.01.15).pdf</a>
+                                </div>
+                                <div>
+                                    <p class="pdf-excerpt">公示件名「アフリカ地域 (広域) 日本の地方部との連携によるアフリカ人材受入・育成のための情報収集・確認調査」</p>
+                                    <a href="独立行政法人国際協力機構契約事務取扱細則.pdf" download class="pdf-download-link">国際協力機構契約事務取扱細則.pdf</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot">3</div>
+                        <h4 class="font-bold text-2xl mb-2 text-red-700">懸念への不誠実な対応</h4>
+                        <p class="text-lg">治安の悪化や文化摩擦など、市民が抱く当然の不安や懸念に対し、行政は「デマ」「誤情報」とレッテルを貼り、真摯に向き合おうとしません。対話ではなく、一方的に市民の声を封じ込めようとする姿勢が、問題をさらに大きくしています。</p>
+                        <div class="mt-4 aspect-video">
+                           <iframe class="w-full h-full rounded-lg shadow-md" src="https://www.youtube.com/embed/R-IRpYl7TgI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-10 pt-6 border-t border-gray-300">
+                <h3 class="text-2xl font-bold text-center mb-4 text-red-800">● 現在の状況</h3>
+                <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
+                     <p class="text-lg">市民の強い懸念を受け、一旦はガーナからの視察団派遣が中止となりました。しかし、計画そのものが白紙撤回されたわけではありません。市は依然として「地域おこし協力隊による国際協力プログラム」を推進する姿勢を崩しておらず、将来的に実質的な移民政策へと繋がる可能性は、今も消えていないのです。</p>
+                     <a href="https://www.sankei.com/article/20250911-4M62MTZJ75FF5CFWASYZZN7QT4/" target="_blank" class="reference-link">参考URL：産経新聞</a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- 「移民」の定義と政府の見解 -->
+        <section class="section-container max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-10 text-red-800">「移民」の定義と政府の見解</h2>
+            <div class="space-y-6">
+                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-gray-400">
+                    <p class="text-lg">政府は「期限付きのインターンであり移民ではない」と説明しますが、これは国際的な定義とは異なります。国連の専門機関であるIOM（国際移住機関）は、滞在期間や理由に関わらず『本来の居住地を離れて移動する人』はすべて『移民』であると定義しています。つまり、政府の説明は言葉の定義を都合よく解釈したものであり、実態を隠すためのすり替えに他なりません。</p>
+                    <a href="https://www.sankei.com/article/20250826-4AJ2YQQN6BKULJSS7KVGTNKBLE/" target="_blank" class="reference-link">参考URL：産経新聞</a>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
+                    <h3 class="font-bold text-lg mb-2">IOM（国際移住機関）の「移民」の定義</h3>
+                    <blockquote class="text-lg italic border-l-4 border-blue-300 pl-4">
+                    「移民」とは国際法などで定義されているものではなく、一国内か国境を越えるか、一時的か恒久的かに関わらず、またさまざまな理由により、本来の住居地を離れて移動する人という一般的な理解に基づく総称です。
+                    </blockquote>
+                    <a href="https://japan.iom.int/migrant-definition" target="_blank" class="reference-link">参考URL：IOM Japan</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 報道されない市民の声 -->
+        <section class="max-w-4xl mx-auto mb-12">
+             <div class="section-container">
+                <h3 class="text-2xl font-bold mb-4 text-gray-800">報道されない市民の声</h3>
+                <p class="text-lg mb-6 text-left">テレビでは報道されていませんが、JICAアフリカホームタウン反対デモも行われています。</p>
+                <div class="aspect-video">
+                    <iframe class="w-full h-full rounded-lg shadow-md" src="https://www.youtube.com/embed/SQqA-LoOZDA?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 問題点セクション -->
+        <section class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8 text-red-800">三条市にガーナからの移民がくるとどんな問題が起きるの？</h2>
+            <div class="space-y-8">
+
+                <!-- 治安の悪化と失踪 -->
+                <div class="topic-card p-6">
+                    <h3 class="text-xl font-bold mb-4 text-red-700">治安の悪化と社会不安</h3>
+                    <div class="mt-4">
+                        <h4 class="text-lg font-bold text-gray-800">犯罪率の増加</h4>
+                        <p class="text-lg my-2">ガーナは日本と比べて犯罪が多く、移民の数が増えると女性や子供が一人では出歩けなくなるかもしれません。一人暮らしの高齢の方の家を狙った強盗も増える可能性があります。</p>
+                        <div class="data-card rounded-lg p-6 shadow-lg my-4">
+                            <h5 class="text-xl font-bold mb-3 text-yellow-300">データが示す治安悪化の現実</h5>
+                            <p class="text-lg">
+                                安易な受け入れがいかに危険か、データが明確に示しています。<br>
+                                国連の統計（UNODC）によると、ガーナは日本と比較して、
+                                <strong class="text-yellow-300 text-xl block my-2">・殺人発生率：約42倍</strong>
+                                <strong class="text-yellow-300 text-xl block my-2">・性暴力発生率：約13倍</strong>
+                                <strong class="text-yellow-300 text-xl block my-2">・強盗発生率：約135倍</strong>
+                                という驚くべき数値です。これは三条市の安全な暮らしが根底から覆されることを意味します。
+                            </p>
+                             <a href="https://dataunodc.un.org/" target="_blank" class="link-button">参考URL (国連薬物犯罪事務所)</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 外国人の取り締まり -->
+                <div class="topic-card p-6">
+                    <h3 class="text-xl font-bold mb-2 text-red-700">外国人犯罪の取り締まりの困難さ</h3>
+                    <p class="text-lg">外国人による犯罪は、偽名を使われたり身元確認が困難だったりするため、一度逃げられると捜査が難航します。また、人種差別との批判を恐れて警察が積極的な職務質問をためらうケースもあります。外国人犯罪が急増する中でも、言葉の壁や身元特定の問題から起訴に至らないケースが多く、被害者が泣き寝入りする状況が懸念されます。</p>
+                     <a href="https://dnr5150.net/blog-179/" target="_blank" class="reference-link">参考URL：「治安の悪化は人権問題」</a>
+                     <div class="mt-4 aspect-video">
+                        <iframe class="w-full h-full rounded-lg shadow-md" src="https://www.youtube.com/embed/rS9LaxttNqc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <!-- 文化的摩擦 -->
+                <div class="topic-card p-6">
+                    <h3 class="text-xl font-bold mb-2 text-red-700">文化的摩擦</h3>
+                    <p class="text-lg">あまりに価値観、習慣、宗教感が違う人々が地域社会に急増すると、ゴミ出しのルールや騒音問題といった身近なトラブルから、より深刻な対立まで、様々な摩擦が生まれる可能性があります。</p>
+                    <div class="mt-4 pt-4 border-t border-gray-200">
+                         <h4 class="text-lg font-bold text-gray-800">イスラム教がもたらす価値観の衝突</h4>
+                         <p class="text-lg">ガーナからの移民はイスラム教徒が多い恐れがあります。イスラム教の教えには、<strong class="text-red-600">女性の権利の軽視、異教徒への暴力、表現の自由の否定(アニメ等)、犬や豚を不浄とする文化</strong>など、私たちの価値観とは相容れない側面があり、深刻な混乱は避けられません。</p>
+                         <div class="mt-4 aspect-video">
+                            <iframe class="w-full h-full rounded-lg shadow-md" src="https://www.youtube.com/embed/MGhsSFmBuTA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 移民によって壊されたヨーロッパ -->
+                <div class="special-topic-card p-6">
+                    <h3 class="text-xl font-bold mb-2 text-amber-700">移民によって壊されたヨーロッパ。けして他人事ではない</h3>
+                    <p class="text-lg">安易な移民政策が、ヨーロッパ諸国でいかに深刻な社会不安、治安悪化、文化の破壊を引き起こしたか。私たちはその失敗から学ばなければなりません。</p>
+                    <div class="mt-4 pt-4 border-t border-amber-200 space-y-4">
+                        <div class="aspect-video">
+                            <iframe class="w-full h-full rounded-lg shadow-md" src="https://www.youtube.com/embed/aCA3uydPlRE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="aspect-video">
+                            <iframe class="w-full h-full rounded-lg shadow-md" src="https://www.youtube.com/embed/dkxA4IplgWs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 私たちにできること -->
+        <section class="mt-16 bg-white border-4 border-red-700 rounded-lg p-8 shadow-lg">
+            <h2 class="text-4xl font-black text-center mb-6 text-red-800 tracking-wider" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">計画の白紙撤回を求めましょう！</h2>
+            
+            <div class="max-w-3xl mx-auto text-lg space-y-8">
+                <div class="bg-gray-800 text-white rounded-lg p-6 text-center">
+                    <p class="font-bold text-xl">「無関心」が、最も未来を危うくします。</p>
+                    <p class="mt-2">この計画を市民不在のまま進めさせるわけにはいきません。<br>私たち一人ひとりの声が、市政を動かす力になります。</p>
+                </div>
+
+                <div class="action-box bg-amber-50 rounded-lg p-6 text-center">
+                    <h3 class="text-2xl font-bold text-amber-800 mb-4">三条市に、私たちの声を届けましょう。</h3>
+                    <p class="text-lg text-gray-700">市役所の方に迷惑がかかるかもしれません。しかし、私たちの未来を守るためには、それでも声を届け続けることが何よりも大切です。</p>
+                    <div class="mt-6 bg-white p-6 rounded-lg shadow-inner">
+                        <p class="font-bold text-xl text-gray-800">【担当窓口】</p>
+                        <p class="text-2xl font-bold my-2">地域経営課</p>
+                        <p class="text-2xl font-bold">電話： <a href="tel:0256-34-5646" class="text-blue-600 hover:underline">0256-34-5646</a> (直通)</p>
+                        <p class="mt-4 text-lg">メールは<a href="https://www.city.sanjo.niigata.jp/cgi-bin/inquiry.php/1" target="_blank" class="text-red-700 font-bold underline hover:text-red-800">「三条市HPの専用フォーム」</a>から送信できます。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 情報リテラシー -->
+        <section class="mt-16">
+            <div class="literacy-box max-w-4xl mx-auto rounded-lg p-8 shadow-2xl text-center">
+                <h3 class="text-3xl font-bold mb-4">【最重要】情報リテラシーを高めてください</h3>
+                <p class="text-lg font-semibold">
+                    行政や大手メディアの情報を鵜呑みにしてはいけません。彼らが真実を報じるとは限りません。
+                    SNSなどを活用し、多角的に情報を集めることが自分の身を守る最大の武器です。ただし、情報の発信元（一次情報）を必ず確認し、感情的なデマに惑わされない冷静な目を持ってください。
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-gray-800 text-white mt-12">
+        <div class="container mx-auto px-6 py-6 text-center text-gray-400">
+             <p class="text-xs">このサイトは、新潟県三条市のアフリカ・ホームタウン計画について、市民に広く問題を提起するために作成されました。内容は特定の個人や団体を誹謗中傷するものではありません。</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
