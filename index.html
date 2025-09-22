@@ -25,6 +25,10 @@
             padding: 2rem;
             margin-bottom: 3rem;
         }
+        .notice-section {
+            background-color: #eff6ff; /* blue-50 */
+            border: 1px solid #dbeafe; /* blue-200 */
+        }
         .topic-card {
             background-color: #ffffff;
             border: 1px solid #e5e7eb;
@@ -134,6 +138,14 @@
             font-style: italic;
             color: #4b5563;
         }
+        .activity-item {
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+        #activityModal.hidden {
+            display: none;
+        }
+
     </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
@@ -155,11 +167,33 @@
                 市が「国際交流」として進める「アフリカ・ホームタウン計画」。しかし、その実態は私たちの生活、そして大切な子供たちの未来を脅かす可能性を秘めています。
             </p>
         </section>
-        
+
         <!-- 追加動画セクション -->
         <section class="max-w-4xl mx-auto mb-12">
             <div class="aspect-video">
                 <iframe class="w-full h-full rounded-lg shadow-md" src="https://www.youtube.com/embed/S6etbtoji1E?start=32" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- お知らせ -->
+        <section class="section-container notice-section max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold text-center mb-4 text-gray-800">お知らせ</h2>
+            <div id="activity-list" class="flex flex-col sm:flex-row sm:justify-start items-start sm:items-center sm:flex-wrap text-left border-t border-b border-gray-200 py-3 px-2">
+                 <!-- 新しい報告はここにコピーして追加 -->
+                <button class="activity-item text-blue-600 hover:text-blue-800 font-semibold py-1 pr-3" 
+                    data-title="「北信越・反移民デー」開催のお知らせ" 
+                    data-date="2025年10月12日" 
+                    data-content='<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">10・12「北信越・反移民デー」<br>新潟県三条市 市役所前にて<br>ガーナ共和国ホームタウン計画に<br>断固反対の声を上げます。<a href="https://twitter.com/hashtag/%E6%97%A5%E6%9C%AC%E7%AC%AC%E4%B8%80%E5%85%9A%E5%8C%97%E4%BF%A1%E8%B6%8A?src=hash&amp;ref_src=twsrc%5Etfw">#日本第一党北信越</a><a href="https://twitter.com/hashtag/%E7%A7%BB%E6%B0%91%E6%94%BF%E7%AD%96%E6%96%AD%E5%9B%BA%E5%8F%8D%E5%AF%BE?src=hash&amp;ref_src=twsrc%5Etfw">#移民政策断固反対</a><a href="https://twitter.com/hashtag/%E3%82%A2%E3%83%95%E3%83%AA%E3%82%AB%E3%83%9B%E3%83%BC%E3%83%A0%E3%82%BF%E3%82%A6%E3%83%B3%E7%99%BD%E7%B4%99%E6%92%A4%E5%9B%9E?src=hash&amp;ref_src=twsrc%5Etfw">#アフリカホームタウン白紙撤回</a> <a href="https://t.co/EDzvENLUoJ">pic.twitter.com/EDzvENLUoJ</a></p>&mdash; 菅原みゆき 日本第一党 上越市 (@77_sugawara) <a href="https://twitter.com/77_sugawara/status/1968840879201751176?ref_src=twsrc%5Etfw">September 19, 2025</a></blockquote>'>
+                    2025.10.12「北信越・反移民デー」新潟県三条市 市役所前にて
+                </button>
+                <span class="text-gray-300 mx-2 hidden sm:inline">|</span>
+                <button class="activity-item text-blue-600 hover:text-blue-800 font-semibold py-1 pr-3" 
+                    data-title="アンケート調査＆チラシ配布のお知らせ" 
+                    data-date="2025年9月23日" 
+                    data-content='<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">9／23㊗️11時から三条市内にて<br>JICA問題を知ってもらうためのアンケート調査＆チラシ配布をします<br>現在市長への開示請求も着々と進行中とのこと<br>白紙撤回まで皆さん行動を続けましょう🇯🇵<br>一緒に参加して下さる方大歓迎です‼️<br>詳細またお知らせ致します📢<a href="https://twitter.com/hashtag/JICA?src=hash&amp;ref_src=twsrc%5Etfw">#JICA</a> <a href="https://twitter.com/hashtag/%E3%83%9B%E3%83%BC%E3%83%A0%E3%82%BF%E3%82%A6%E3%83%B3%E8%AA%8D%E5%AE%9A?src=hash&amp;ref_src=twsrc%5Etfw">#ホームタウン認定</a> <a href="https://twitter.com/hashtag/%E4%B8%89%E6%9D%A1%E5%B8%82?src=hash&amp;ref_src=twsrc%5Etfw">#三条市</a> <a href="https://t.co/toQWkZfu4d">pic.twitter.com/toQWkZfu4d</a></p>&mdash; 政治を真剣に考える新潟県民の会🌸 (@CandyOpen1) <a href="https://twitter.com/CandyOpen1/status/1967983082277163210?ref_src=twsrc%5Etfw">September 16, 2025</a></blockquote>'>
+                    2025.09.23 アンケート調査＆チラシ配布
+                </button>
+                 <!-- ここまでをコピー -->
             </div>
         </section>
 
@@ -173,7 +207,7 @@
                     <div class="timeline-item">
                         <div class="timeline-dot">1</div>
                         <h4 class="font-bold text-2xl mb-2 text-red-700">不透明なプロセス</h4>
-                        <p class="text-lg">「アフリカ人材の受入」という市の将来に重大な影響を及ぼす計画が、市民への十分な説明や議論がないまま、水面下で進められていました。市民が気づいたときには、すでに認定を受けており、計画が動き出していたのです。</p>
+                        <p class="text-lg">「アフリカ人材の受入」という市の将来に重大な影響を及す計画が、市民への十分な説明や議論がないまま、水面下で進められていました。市民が気づいたときには、すでに認定を受けており、計画が動き出していたのです。</p>
                         <p class="mt-4 font-bold text-lg">→石破茂首相は、アフリカの経済成長に向け「今後3年間で30万人の人材育成を実施する」と表明。<a href="https://news.yahoo.co.jp/articles/adc5b61eeb0ba9125bf6dbc253c40087c10b96e9" target="_blank" class="reference-link ml-1">参考：「アフリカ経済成長へ30万人育成…」</a></p>
                         <p class="mt-4 font-bold text-lg">→三条市は、JICAから「ガーナのホームタウン」に認定</p>
                         <div class="mt-2 flex justify-center">
@@ -371,6 +405,26 @@
         </section>
 
     </main>
+    
+    <!-- Modal -->
+    <div id="activityModal" class="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center p-4 hidden z-50">
+        <div class="bg-white rounded-lg shadow-xl max-w-2xl w-full flex flex-col max-h-[90vh]">
+            <!-- Modal Header -->
+            <div class="flex justify-between items-start p-5 border-b rounded-t">
+                <div>
+                    <h3 id="modalTitle" class="text-2xl font-bold text-gray-900"></h3>
+                    <p id="modalDate" class="text-sm text-gray-500 mt-1"></p>
+                </div>
+                <button id="closeModal" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.636a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button>
+            </div>
+            <!-- Modal Body -->
+            <div class="p-6 space-y-6 overflow-y-auto">
+                <div id="modalContent" class="text-lg text-gray-700 leading-relaxed"></div>
+            </div>
+        </div>
+    </div>
 
     <!-- フッター -->
     <footer class="bg-gray-800 text-white mt-12">
@@ -379,6 +433,50 @@
         </div>
     </footer>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const modal = document.getElementById('activityModal');
+            const closeModalBtn = document.getElementById('closeModal');
+            const activityItems = document.querySelectorAll('.activity-item');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalDate = document.getElementById('modalDate');
+            const modalContent = document.getElementById('modalContent');
+
+            activityItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    modalTitle.textContent = item.dataset.title;
+                    modalDate.textContent = item.dataset.date;
+                    modalContent.innerHTML = item.dataset.content;
+                    modal.classList.remove('hidden');
+                    // Reload Twitter widgets if the content contains a tweet
+                    if (item.dataset.content.includes('twitter-tweet')) {
+                        if (typeof twttr !== 'undefined' && twttr.widgets) {
+                            twttr.widgets.load(modalContent);
+                        }
+                    }
+                });
+            });
+
+            const hideModal = () => {
+                modal.classList.add('hidden');
+            };
+
+            closeModalBtn.addEventListener('click', hideModal);
+
+            modal.addEventListener('click', (e) => {
+                // Check if the click is on the modal backdrop
+                if (e.target.id === 'activityModal') {
+                    hideModal();
+                }
+            });
+            
+            document.addEventListener('keydown', (e) => {
+                if (e.key === "Escape" && !modal.classList.contains('hidden')) {
+                    hideModal();
+                }
+            });
+        });
+    </script>
 </body>
 </html>
 
